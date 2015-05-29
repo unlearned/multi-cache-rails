@@ -1,4 +1,4 @@
-# Multicache::Rails
+# MultiCache::Rails
 
 TODO: Write a gem description
 
