@@ -20,6 +20,11 @@ module Rails
         @cache_store[cache_name] || @cache_store[:default]
       end
 
+      def cache_store_names
+        return [] if @cache_store.blank?
+        @cache_store.keys
+      end
+
       private
 
       def init_cache_store
