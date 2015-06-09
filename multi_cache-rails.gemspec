@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = MultiCache::Rails::VERSION
   spec.authors       = ['Takashi Uesugi']
   spec.email         = ['tksuesg@gmail.com']
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ''
+  spec.summary       = %q{Multiple caches configuration for Ruby On Rails.}
+#  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.homepage      = 'https://github.com/unlearned/multi-cache-rails'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
