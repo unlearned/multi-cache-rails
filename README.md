@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/unlearned/multi-cache-rails.svg)](https://travis-ci.org/unlearned/multi-cache-rails)
+
 # MultiCache::Rails
 
 Multiple caches configuration for Ruby On Rails.
