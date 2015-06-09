@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'pry'
-  spec.add_dependency 'railties'
+  spec.add_dependency 'railties', '~> 4.2'
 end
