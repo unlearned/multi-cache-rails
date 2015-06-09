@@ -1,6 +1,6 @@
 # MultiCache::Rails
 
-Multiple cache configuration for Ruby On Rails.
+Multiple caches configuration for Ruby On Rails.
 
 
 ## Installation
