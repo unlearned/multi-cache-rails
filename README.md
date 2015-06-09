@@ -1,12 +1,13 @@
 # MultiCache::Rails
 
-TODO: Write a gem description
+Multiple cache configuration for Ruby On Rails.
+
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'multicache-rails'
+    gem 'multi_cache-rails'
 
 And then execute:
 
@@ -14,11 +15,28 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install multicache-rails
+    $ gem install multi_cache-rails
 
 ## Usage
 
-TODO: Write usage instructions here
+On `Application.configure` , it's like `project_root/config/emvironments/production.rb`
+
+```
+YourProject::Application.configure do
+
+config.cache_store =  :dalli_store, 'localhost', { :namespace => 'Fril', :compress => true }
+config.cache_store = {
+  name: :secondary,
+  setting: :memory_store
+}
+end
+```
+
+Then, In your project, you can use the caches like below,
+```
+Rails.cache.read("something") # fetch cached object from :dalli_store
+Rails.cache(:secondary).read("something") # fetch cached object from :memory_store
+```
 
 ## Contributing
 
