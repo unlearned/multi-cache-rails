@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/unlearned/multi-cache-rails.svg)](https://travis-ci.org/unlearned/multi-cache-rails)
-[![Code Climate](https://codeclimate.com/github/unlearned/multi-cache-rails/badges/gpa.svg)](https://codeclimate.com/github/unlearned/multi-cache-rails)
 
 # MultiCache::Rails
 
