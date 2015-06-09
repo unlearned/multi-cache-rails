@@ -19,11 +19,20 @@ Or install it yourself as:
 
     $ gem install multi_cache-rails
 
+
+And then add "require" on 'project_root/config/application.rb'
+
+```ruby
+require 'rails/all'
+require 'multi_cache'
+
+```
+
 ## Usage
 
 On `Application.configure` , it's like `project_root/config/emvironments/production.rb`
 
-```
+```ruby
 YourProject::Application.configure do
 
 config.cache_store =  :dalli_store, 'localhost', { :namespace => 'Fril', :compress => true }
@@ -35,7 +44,7 @@ end
 ```
 
 Then, In your project, you can use the caches like below,
-```
+```ruby
 Rails.cache.read("something") # fetch cached object from :dalli_store
 Rails.cache(:secondary).read("something") # fetch cached object from :memory_store
 ```
