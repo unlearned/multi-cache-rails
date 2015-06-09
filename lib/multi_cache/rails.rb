@@ -8,12 +8,14 @@ module Rails
         @cache[key] = cache_obj[:cache]
       else
         @cache[:default] = cache_obj
+        silence_warnings { Object.const_set 'RAILS_CACHE', cache_obj }
       end
       nil
     end
 
     def cache(name = :default)
       return nil unless defined? @cache
+      return RAILS_CACHE if name == :default
       @cache[name]
     end
   end
