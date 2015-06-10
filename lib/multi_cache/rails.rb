@@ -14,7 +14,7 @@ module Rails
 
     def cache(name = :default)
       return nil unless defined? @cache
-      @cache[name]
+      @cache[name] || @cache[:default]
     end
   end
 end
