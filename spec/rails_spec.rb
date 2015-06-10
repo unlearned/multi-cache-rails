@@ -10,6 +10,7 @@ module Rails
       expect(Rails.cache(:default)).to eq 'cache_object1'
       expect(Rails.cache(:secondary)).to eq 'cache_object2'
       expect(Rails.cache(:tertiary)).to eq 'cache_object3'
+      expect(Rails.cache(:nothing)).to eq 'cache_object1'
     end
   end
 end
