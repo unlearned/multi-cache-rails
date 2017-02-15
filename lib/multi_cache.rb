@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'multi_cache/version'
 require 'rails'
 require 'multi_cache/rails/application/configuration'
@@ -9,4 +10,3 @@ begin
   require 'pry'
 rescue LoadError
 end
-

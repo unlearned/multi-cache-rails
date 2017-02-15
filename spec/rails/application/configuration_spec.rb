@@ -9,7 +9,7 @@ describe Rails::Application::Configuration do
     end
 
     context 'set the prymary' do
-      let(:cache_setting) { [:file_store, '/tmp/cache/test']  }
+      let(:cache_setting) { [:file_store, '/tmp/cache/test'] }
       subject do
         configuration.cache_store = cache_setting
         configuration.cache_store
@@ -18,7 +18,7 @@ describe Rails::Application::Configuration do
     end
 
     context 'set the prymary' do
-      let(:cache_setting_secondary) { [:file_store, '/tmp/cache/secondary']  }
+      let(:cache_setting_secondary) { [:file_store, '/tmp/cache/secondary'] }
       let!(:set) do
         configuration.cache_store = {
           name: :secondary,

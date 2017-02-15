@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Rails
   class << self
     def cache=(cache_obj)
