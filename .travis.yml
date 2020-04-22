@@ -1,3 +1,15 @@
 language: ruby
 rvm:
-- 2.1.4
+- 2.3.1
+- 2.5.5
+
+before_install:
+  - gem install bundler -v '1.17.3'
+
+install: bundle _1.17.3_ install
+
+before_script:
+  - bundle exec appraisal install
+
+script:
+  - 'bundle exec appraisal rspec'
