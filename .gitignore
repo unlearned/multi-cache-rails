@@ -8,7 +8,9 @@ InstalledFiles
 _yardoc
 coverage
 doc/
+gemfiles/*.gemfile.lock
 lib/bundler/man
+log/*.log
 pkg
 rdoc
 spec/reports
